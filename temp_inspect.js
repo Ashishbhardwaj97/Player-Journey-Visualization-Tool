@@ -1,0 +1,1 @@
+const fs = require('fs'); const data = JSON.parse(fs.readFileSync('public/data/AmbroseValley_February_10.json')); console.log(JSON.stringify(data[0], null, 2)); console.log('Total objects:', data.length);
