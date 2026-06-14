@@ -1,4 +1,7 @@
-# React + TypeScript + Vite
+# Player-Journey-Visualization-Tool
+An interactive web-based visualization tool built with React and Vite to analyze player telemetry. It plots match events—like eliminations and looting—on game minimaps, providing developers with actionable insights to optimize level design. 
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
