@@ -127,7 +127,7 @@ export const Sidebar: React.FC = () => {
         </section>
 
         {/* Heatmap Filters */}
-        <section className="pb-8">
+        <section>
           <div className="flex items-center gap-2 mb-4 text-slate-400">
             <Flame className="w-4 h-4" />
             <h2 className="text-sm font-semibold tracking-wide uppercase">Heatmap Overlays</h2>
@@ -159,6 +159,23 @@ export const Sidebar: React.FC = () => {
                 </button>
               );
             })}
+          </div>
+        </section>
+
+        {/* Path Legend */}
+        <section className="pb-8">
+          <div className="flex items-center gap-2 mb-4 text-slate-400">
+            <h2 className="text-sm font-semibold tracking-wide uppercase">Path Legend</h2>
+          </div>
+          <div className="space-y-3 px-4 py-3 bg-slate-800/30 rounded-xl border border-slate-800/50">
+            <div className="flex items-center gap-3">
+              <div className="w-6 h-0.5 bg-sky-400 rounded-full shadow-[0_0_8px_rgba(56,189,248,0.8)]"></div>
+              <span className="text-sm text-slate-300 font-medium">Human Player</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-6 border-b-2 border-rose-500 border-dashed"></div>
+              <span className="text-sm text-slate-300 font-medium">Bot</span>
+            </div>
           </div>
         </section>
       </div>

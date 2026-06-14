@@ -140,13 +140,13 @@ export const CanvasMap: React.FC = () => {
       }
 
       if (isHuman) {
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)';
-        ctx.lineWidth = 1.5;
+        ctx.strokeStyle = 'rgba(56, 189, 248, 0.7)'; // Cyan/Blue for humans
+        ctx.lineWidth = 2;
         ctx.setLineDash([]);
       } else {
-        ctx.strokeStyle = 'rgba(150, 150, 150, 0.2)';
-        ctx.lineWidth = 1;
-        ctx.setLineDash([4, 4]); // Dashed line for bots
+        ctx.strokeStyle = 'rgba(244, 63, 94, 0.7)'; // Red/Rose for bots
+        ctx.lineWidth = 1.5;
+        ctx.setLineDash([6, 6]); // Dashed line for bots
       }
       ctx.stroke();
     });
